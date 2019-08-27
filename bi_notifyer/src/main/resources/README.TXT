@@ -1,0 +1,28 @@
+Alter table user_retention_client_ltv partition by RANGE COLUMNS  (stat_day)
+(
+	Partition p140101 values less than('2014-01-01'),
+	Partition p140201 values less than('2014-02-01'),
+	Partition p140301 values less than('2014-03-01'),
+	Partition p140401 values less than('2014-04-01'),
+	Partition p140501 values less than('2014-05-01'),
+	Partition p140601 values less than('2014-06-01'),
+	Partition p140701 values less than('2014-07-01'),
+	Partition p140801 values less than('2014-08-01'),
+	Partition p140901 values less than('2014-09-01'),
+	Partition p141001 values less than('2014-10-01'),
+	Partition p141101 values less than('2014-11-01'),
+	Partition p141201 values less than('2014-12-01'),
+	Partition p150101 values less than('2015-01-01'),
+	Partition p150201 values less than('2015-02-01'),
+	Partition p150301 values less than('2015-03-01'),
+	Partition p150401 values less than('2015-04-01'),
+	Partition p150501 values less than('2015-05-01'),
+	Partition p150601 values less than('2015-06-01'),
+	Partition p150701 values less than('2015-07-01'),
+	Partition p150801 values less than('2015-08-01'),
+	Partition p150901 values less than('2015-09-01'),
+	Partition p151001 values less than('2015-10-01'),
+	Partition p151101 values less than('2015-11-01'),
+	Partition p151201 values less than('2015-12-01'),
+	Partition pmax values less than(maxvalue)
+);

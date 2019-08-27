@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+		<groupId>org.corps.bi.common</groupId>
+		<artifactId>bi-common-parent</artifactId>
+		<version>8.2.0-SNAPSHOT</version>
+ </parent>
+  <artifactId>common-tools</artifactId>
+  <name>common-tools</name>
+  <description>common-tools</description>
+  
+  <properties>
+		<finalName>common-tools</finalName>
+		<maven-checkstyle-plugin.version>2.6</maven-checkstyle-plugin.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>4.8.2</junit.version>
+		<hamcrest.version>1.1</hamcrest.version>
+		<compiler.version>1.6</compiler.version>
+		<compiler.plugin.version>2.0.2</compiler.plugin.version>
+		<httpclient.version>4.5</httpclient.version>
+		<servlet.version>2.5</servlet.version>
+		<jackson.version>1.8.5</jackson.version>
+		<commons.lang3>3.1</commons.lang3>
+ </properties>
+ 
+ <build>
+		<finalName>${finalName}</finalName>
+		
+	</build>
+	
+  <dependencies>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+		  <groupId>oro</groupId>
+		  <artifactId>oro</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+		</dependency>
+		
+	</dependencies>
+	
+	
+	
+</project>
