@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.hoolai.bi</groupId>
-		<artifactId>bi-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
+	 <parent>
+		<groupId>org.corps.bi.common</groupId>
+		<artifactId>bi-common-parent</artifactId>
+		<version>8.2.0-SNAPSHOT</version>
+ 	</parent>
 	<artifactId>bi_notifyer</artifactId>
 	<packaging>jar</packaging>
 	<name>bi_notifyer</name>
@@ -61,6 +61,12 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
 			<version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.corps.bi.common</groupId>
+			<artifactId>common-tools</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		
 	</dependencies>

@@ -1,11 +1,10 @@
-package com.hoolai.bi.notifyer.sms;
+package org.corps.bi.notifyer.sms;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import org.corps.bi.tools.util.HttpClientUtils;
 import org.springframework.util.DigestUtils;
-
-import com.jian.tools.util.HttpClientUtils;
 
 
 

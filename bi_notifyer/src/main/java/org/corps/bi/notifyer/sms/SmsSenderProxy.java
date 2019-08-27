@@ -1,9 +1,9 @@
-package com.hoolai.bi.notifyer.sms;
+package org.corps.bi.notifyer.sms;
 
 import java.net.URLEncoder;
 import java.util.List;
 
-import com.jian.tools.util.HttpClientUtils;
+import org.corps.bi.tools.util.HttpClientUtils;
 
 
 

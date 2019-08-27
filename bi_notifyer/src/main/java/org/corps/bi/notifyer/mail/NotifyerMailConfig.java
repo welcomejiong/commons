@@ -1,4 +1,4 @@
-package com.hoolai.bi.notifyer.mail;
+package org.corps.bi.notifyer.mail;
 
 import java.io.InputStream;
 import java.util.Properties;
