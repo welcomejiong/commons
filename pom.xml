@@ -44,6 +44,7 @@
 	<modules>
 		<module>common-tools</module>
 		<module>bi_notifyer</module>
+		
 	</modules>
 	
 
