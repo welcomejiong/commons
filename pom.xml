@@ -217,7 +217,18 @@
 	
 	<distributionManagement>
 	
-		
+        <repository>
+            <id>nexus-releases</id>
+            <name>Nexus Release Repository</name>
+            <url>http://129.204.19.21/nexus/repository/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>http://129.204.19.21/nexus/repository/snapshots/</url>
+        </snapshotRepository>
+	
+		<!-- 
 	 	<repository>
             <id>nexus-release</id>
             <name>Nexus Release Repository</name>
@@ -228,7 +239,7 @@
             <name>Nexus Snapshots Repository</name>
             <url>http://repos.lepaowang.com/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
-        <!-- 
+        
         <repository>
             <id>nexus-release</id>
             <name>Nexus Release Repository</name>
