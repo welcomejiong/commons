@@ -1,5 +1,6 @@
 package org.corps.bi.tools.util;
 
+import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
@@ -30,10 +31,36 @@ public class NetUtils {
 		return ips;
 	}
 	
+	public static String getLocalMachineIp() {
+		try {
+		      Enumeration<NetworkInterface> allNetInterfaces = NetworkInterface.getNetworkInterfaces();
+		      InetAddress ip = null;
+		      while (allNetInterfaces.hasMoreElements()) {
+		        NetworkInterface netInterface = (NetworkInterface) allNetInterfaces.nextElement();
+		        //用于排除回送接口,非虚拟网卡,未在使用中的网络接口.
+		        if (netInterface.isLoopback() || netInterface.isVirtual() || !netInterface.isUp()) {
+		          continue;
+		        } else {
+		          Enumeration<InetAddress> addresses = netInterface.getInetAddresses();
+		          while (addresses.hasMoreElements()) {
+		            ip = addresses.nextElement();
+		            if (ip != null && ip instanceof Inet4Address) {
+		              return ip.getHostAddress();
+		            }
+		          }
+		        }
+		      }
+		    } catch (Exception e) {
+		    	System.err.println("IP地址获取失败" + e.toString());
+		    }
+		    return "";
+	}
+	
 	public static void main(String []args){
 		for(String ip:localMachineIp()){
 			System.out.println(ip+" "+IpUtils.isValidIp(ip));
 		}
+		System.out.println(getLocalMachineIp());
 	}
 	
 }
