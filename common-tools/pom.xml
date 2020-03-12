@@ -7,6 +7,7 @@
  </parent>
   <artifactId>common-tools</artifactId>
   <name>common-tools</name>
+  <version>8.2.1-SNAPSHOT</version>
   <description>common-tools</description>
   
   <properties>
