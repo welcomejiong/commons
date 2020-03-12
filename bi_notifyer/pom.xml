@@ -8,12 +8,13 @@
  	</parent>
 	<artifactId>bi_notifyer</artifactId>
 	<packaging>jar</packaging>
+	<version>8.2.1-SNAPSHOT</version>
 	<name>bi_notifyer</name>
 	<description>bi_notifyer</description>
 
 	<properties>
 		<projectName>bi_notifyer</projectName>
-		<common_tools.version>0.0.1-SNAPSHOT</common_tools.version>
+		<common_tools.version>8.2.0-SNAPSHOT</common_tools.version>
 		<spring.version>3.2.10.RELEASE</spring.version>
 		<hive.version>0.7.1-cdh3u4</hive.version>
 	</properties>
@@ -66,7 +67,7 @@
 		<dependency>
 			<groupId>org.corps.bi.common</groupId>
 			<artifactId>common-tools</artifactId>
-			<version>${project.version}</version>
+			<version>${common_tools.version}</version>
 		</dependency>
 		
 	</dependencies>
