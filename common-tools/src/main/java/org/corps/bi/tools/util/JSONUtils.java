@@ -56,6 +56,21 @@ public class JSONUtils {
 		}
 	}
 	
+	public static <T> String toJSONFormat(T object) {
+		ObjectMapper mapper = getObjectMapper(false);
+		try {
+			String jsonStr = mapper.defaultPrettyPrintingWriter().writeValueAsString(object);
+			return jsonStr;
+		} catch (JsonGenerationException e) {
+			throw new RuntimeException("JsonGenerationException",e);
+		} catch (JsonMappingException e) {
+			throw new RuntimeException("JsonMappingException",e);
+		} catch (IOException e) {
+			throw new RuntimeException("IOException",e);
+		}
+	}
+	
+	
 	
 	/**
 	 * 
