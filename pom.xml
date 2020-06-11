@@ -31,7 +31,7 @@
 		<junit.version>4.7</junit.version>
 		<commons.io.version>2.6</commons.io.version>
 		<commons.lang3.version>3.7</commons.lang3.version>
-		<commons.beanutils.version>1.8.3</commons.beanutils.version>
+		<commons.beanutils.version>1.9.2</commons.beanutils.version>
 		<snakeyaml.version>1.19</snakeyaml.version>
 		<servlet.version>2.5</servlet.version>
 		<oro.version>2.0.8</oro.version>
