@@ -35,7 +35,7 @@
 		<snakeyaml.version>1.19</snakeyaml.version>
 		<servlet.version>2.5</servlet.version>
 		<oro.version>2.0.8</oro.version>
-		<jsoup.version>1.6.1</jsoup.version>
+		<jsoup.version>1.15.3</jsoup.version>
 		
 		<jedis.version>3.0.1</jedis.version>
 		
